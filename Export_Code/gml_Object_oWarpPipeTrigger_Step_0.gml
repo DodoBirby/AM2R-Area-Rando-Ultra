@@ -4,6 +4,8 @@ if (state == 1)
 {
     if (statetime == 0)
     {
+        if (!(is_undefined(ds_map_find_value(global.roommap, id))))
+            AR_Pipe_Code()
         image_index = 8
         door_open = 1
         oCharacter.canbehit = 0
@@ -59,6 +61,8 @@ if (state == 2)
 {
     if (statetime == 0)
     {
+        if (!(is_undefined(ds_map_find_value(global.roommap, id))))
+            AR_Pipe_Code()
         depth = -90
         image_index = 0
         fx = instance_create((oCharacter.x + lengthdir_x(160, direction)), (oCharacter.y + lengthdir_y(160, direction)), oWarpPlayerFX)

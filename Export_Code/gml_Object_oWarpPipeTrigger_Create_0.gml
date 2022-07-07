@@ -7,5 +7,3 @@ targetroom = 22
 targetx = 1104
 targety = 448
 alarm[0] = 1
-if (!(is_undefined(ds_map_find_value(global.roommap, id))))
-    AR_Pipe_Code()
