@@ -9,6 +9,7 @@ global.lastroom = room
 global.targetroom = 0
 black = 0
 global.roommap = ds_list_create()
+global.roomSeedGenerated = 0
 global.classicmode = 0
 global.godmode = 0
 global.enablecontrol = 1

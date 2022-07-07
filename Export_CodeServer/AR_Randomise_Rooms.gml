@@ -10,11 +10,6 @@ deadend = global.deadendlist
 if file_exists("AreaRando/seed.txt")
     file_delete("AreaRando/seed.txt")
 fid = file_text_open_append("AreaRando/seed.txt")
-if instance_exists(oClient)
-{
-    if (!is_undefined(oClient.seed))
-        random_set_seed(oClient.seed)
-}
 while (ds_list_size(access) > 0)
 {
     ds_list_shuffle(access)
