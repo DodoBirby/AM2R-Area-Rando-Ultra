@@ -10,12 +10,13 @@ save_str[7] = sv6_add_map()
 save_str[8] = sv6_randomizer()
 save_str[9] = sv6_add_trooper_logs()
 save_str[10] = sv6_add_seed()
+save_str[11] = ds_map_write(global.roommap)
 filename = argument0
 fid = file_text_open_write(filename)
 file_text_write_string(fid, rc4("[AM2R SaveData V7.0]", "HEADER_KEY"))
 file_text_writeln(fid)
 i = 0
-repeat (10)
+repeat (11)
 {
     file_text_write_string(fid, base64_encode(save_str[i]))
     file_text_writeln(fid)

@@ -1521,7 +1521,7 @@ if (state == SAVINGFX)
         instance_create(x, y, oSaveFX)
         instance_create(x, y, oSaveSparks)
         popup_text(get_text("Notifications", "GameSaved"))
-        save_game(((working_directory + "\multitroid\save") + string((global.saveslot + 1))))
+        save_game(((working_directory + "\AreaRando\save") + string((global.saveslot + 1))))
         refill_heath_ammo()
     }
     if (statetime == 230)
