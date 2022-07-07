@@ -64,7 +64,7 @@ else
     file_text_readln(fid)
     sv6_get_seed(fid)
     file_text_readln(fid)
-    global.roommap = ds_map_read(file_text_read_string(fid))
+    sv6_get_ar(fid)
     file_text_readln(fid)
     file_text_close(fid)
     file_delete((filename + "d"))
